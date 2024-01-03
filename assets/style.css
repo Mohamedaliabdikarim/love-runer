@@ -37,11 +37,12 @@ header {
     display: block;
 }
 
-#nav-toggle{
+#nav-toggle {
     display: none;
 
 }
-.nav-toggle-label{
+
+.nav-toggle-label {
     font-size: 2rem;
 
 }
@@ -95,4 +96,25 @@ main {
 /*footer*/
 footer {
     background-color: orange;
+}
+
+/* Media quries*/
+@media screen and (min-width:768px) {
+    nav {
+        display: block;
+        box-shadow: none;
+        position: relative;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+    #menu >li {
+        padding-left: 1rem;
+    }
+        .nav-toggle-label{
+            display: none;
+        }
 }
